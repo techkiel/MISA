@@ -1,0 +1,16 @@
+# PREVENT VIEWING OF .HTACCESS
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+# PREVENT INDEXING OF DIRECTORIES
+Options -Indexes
+
+# ERROR HANDLING AND REDIRECTS
+
+ErrorDocument 400 /misa/redirect.php
+ErrorDocument 401 /misa/redirect.php
+ErrorDocument 403 /misa/redirect.php
+ErrorDocument 404 /misa/redirect.php
+ErrorDocument 500 /misa/redirect.php
