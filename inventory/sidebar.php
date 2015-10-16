@@ -32,6 +32,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
       <a class="list-group-item" href="stats.php">Inventory Statistics<i class="fa fa-chevron-right pull-right"></i></a>
       <a class="list-group-item" href="report.php">Generate Report<i class="fa fa-chevron-right pull-right"></i></a>
       <a class="list-group-item" href="search.php">Search<i class="fa fa-chevron-right pull-right"></i></a>
+	  <a class="list-group-item" href="setup.php">Initial Setup<i class="fa fa-chevron-right pull-right"></i></a>
     </div><!--/list-group-->
   </div><!--/scrollable-content-->
 </div><!--/scrollable sidebar-scrollable-->
