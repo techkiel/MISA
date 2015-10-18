@@ -1,4 +1,4 @@
 <?php
 	//sets institution name
-	$institution = "ASLP Library";
+	$institution = "Institution Name";
 ?>
