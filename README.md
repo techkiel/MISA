@@ -7,7 +7,7 @@ This software is a product of the collaboration of the author and the University
 
 Summary of features:
 
-MISA aims to deliver a free, fast, and efficient inventory taking experience for institutions that utilize barcodes in their assets/materials using the barcode scanning capability of Android smartphones through the <a href="https://github.com/zxing/zxing">ZXing Barcode Scanner application</a>.
+MISA aims to deliver a free, fast, and efficient inventory taking experience for institutions that utilize barcodes in their assets/materials using the barcode scanning capability of Android smartphones through the <a href="https://github.com/zxing/zxing">ZXing Barcode Scanner Android App</a>.
 
 Minimum System Requirements:
 <ul>
@@ -20,7 +20,7 @@ Minimum System Requirements:
   <li>Android smartphone</li>
     <ul>
       <li>5mp camera with auto-focus</li>
-      <li><a href="https://play.google.com/store/apps/details?id=com.google.zxing.client.android">ZXing Barcode Scanner</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.google.zxing.client.android">ZXing Barcode Scanner App</a></li>
       <li>A web browser</li>
       <li>512MB RAM</li>
       <li>WLAN: 54mbps IEEE 802.11g</li>
@@ -32,5 +32,6 @@ Minimum System Requirements:
     </ul>
 </ul>
 
+The <a href="https://github.com/mcasimir/mobile-angular-ui/">Mobile Angular UI</a> Framework has been used as the front end of this software.
 
 MISA is released under the <a href="https://github.com/techkiel/MISA/blob/master/LICENSE">GNU General Public License (GPL) version 2</a>
