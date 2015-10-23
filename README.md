@@ -3,7 +3,7 @@ MISA - an open source mobile inventory software for android
 
 Short History:
 
-This software is a product of the collaboration of the author and the University of the Philippines School of Economics Library. Prior to its release as "MISA", it was a thesis entitled "Design and Implementation of an Open Source Android Mobile Barcode Inventory Software for the University of the Philippines Diliman School of Economics Library" by the author. It was submitted by the author to the Univesity of the Philippines School of Library and Information Studies in partial fulfillment of the requirements for the degree of Bachelor of Library and Information Science.
+This software is a product of the collaboration of the author and the University of the Philippines School of Economics Library. Prior to its release as "MISA", it was a thesis entitled "<a href="http://ilib.upd.edu.ph/servlet/template/opac%2CDetails.vm/type/brief/from/search?marcid=249806407">Design and Implementation of an Open Source Android Mobile Barcode Inventory Software for the University of the Philippines Diliman School of Economics Library</a>". It was submitted by the author to the Univesity of the Philippines School of Library and Information Studies in partial fulfillment of the requirements for the degree of Bachelor of Library and Information Science.
 
 Summary of features:
 
