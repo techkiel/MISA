@@ -28,7 +28,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   include_once 'includes/db_connect.php';
 
   //Grabs barcode details
-  $barcode 		= $_GET['barcode'];
+  $barcode 		= $_GET['barcode'];   
+
   //Retrieves matching row from inv_db
   $sql			= "SELECT * FROM inv_db WHERE barcode = '" . $barcode . "';";
   $result		= $link->query($sql);

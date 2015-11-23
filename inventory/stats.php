@@ -22,7 +22,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 -->
 <?php
 
-//ini_set('display_errors', 1);
+  //ini_set('display_errors', 1);
   include_once 'includes/ipconfig.php';
   include_once 'includes/db_connect.php';
 
@@ -31,15 +31,15 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   //Retrieves all missing items from inv_db
   $sql0   			= "SELECT barcode FROM inv_db WHERE flag IS NULL";
   $result0 			= $link->query($sql0);
-  $row_count0 	    		= mysqli_num_rows($result0);
+  $row_count0 	    = mysqli_num_rows($result0);
   //Retrieves all found items from inv_db
   $sql1				= "SELECT barcode FROM inv_db WHERE flag IS NOT NULL";
   $result1 			= $link->query($sql1);
-  $row_count1    		= mysqli_num_rows($result1);
+  $row_count1    	= mysqli_num_rows($result1);
   //Retrieves all items from inv_db
   $sql2	  			= "SELECT barcode FROM inv_db";
   $result2 			= $link->query($sql2);
-  $row_count2    		= mysqli_num_rows($result2);
+  $row_count2    	= mysqli_num_rows($result2);
 
   //determines the inventory stats
   $found			= ($row_count1/$row_count2);
@@ -47,7 +47,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   $total			= ($found+$missing);
 
   $count			= 1;
-  $timestamp			= date("Y-m-d H:i:s");
+  $timestamp		= date("Y-m-d H:i:s");
   
 ?>
 

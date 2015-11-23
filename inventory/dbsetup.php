@@ -1,17 +1,43 @@
 <?php
   ini_set('display_errors', 1);
   include_once 'includes/ipconfig.php';
-  //include_once 'includes/db_connect.php';
+  //include_once 'includes/db_connect.php';  
 
-	
-	//http://stackoverflow.com/questions/19751354/how-to-import-sql-file-in-mysql-database-using-php
+  $userflag = 0;
+  $passflag = 0;
+  
+  //http://stackoverflow.com/questions/13045279/if-isset-post
+  
+  if (isset($_POST['dbuser']) && !empty($_POST['dbuser'])){
+    $dbuser0 = $_POST['dbuser'];
+  } else {
+    $userflag = "1";
+  }
+  
+  if (isset($_POST['dbpassword']) && !empty($_POST['dbpassword'])){
+    $dbpassword0 = $_POST['dbpassword'];
+  } else {
+    $passflag = "1";
+  }
+  
+  if ($userflag == "1"){
+	  echo "Username is not defined! </br>";
+	  
+	  if ($passflag == "1") {
+		  echo "Password is not defined! </br>";
+	  };
+	  
+	  die;
+  }
+
+  //http://stackoverflow.com/questions/19751354/how-to-import-sql-file-in-mysql-database-using-php
 	
   //Database Credentials
 	$dbhost			= 'localhost';								//DB host
-  $dbuser 		= $_POST['dbuser'];						//DB user
-  $dbpassword	= $_POST['dbpassword'];				//DB password
-	$dbname			= 'test';											//DB name
-	$dbfile			= '../dbsetup/database.sql';	//DB file
+    $dbuser 		= $dbuser0;							   		//DB user
+    $dbpassword		= $dbpassword0;		       					//DB password
+	$dbname			= 'test';								   	//DB name
+	$dbfile			= '../dbsetup/database.sql';	           	//DB file
 
 	// Connect to MySQL server
 	mysql_connect($dbhost, $dbuser, $dbpassword) or die('Error connecting to MySQL server: ' . mysql_error());
@@ -41,6 +67,7 @@
 				$templine = '';
 		}
 	}
+	
 ?>
 <!DOCTYPE html>
 <html>

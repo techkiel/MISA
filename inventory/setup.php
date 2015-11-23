@@ -57,6 +57,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     <script src="../dist/js/angular-touch.min.js"></script>
     <script src="../dist/js/mobile-angular-ui.min.js"></script>
     <script src="misa.js"></script>
+	
   </head>
   <body ng-app="MobileAngularUiExamples" ng-controller="MainController">
 
@@ -125,7 +126,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 			</br>
 			<div bs-panel class="form-actions">
 			  <div content-for="navbarAction" duplicate>
-				<button class="btn btn-primary" value="submit" type="submit" >
+				<button class="btn btn-primary" value="submit" type="submit">
 				  Proceed
 				</button>
 			  </div>
