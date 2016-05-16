@@ -103,7 +103,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 										</select>
 									</td>
 								<tr>
-							<table>
+							</table>
 						</form>
 		</div><!--/scrollable-content-->	  
 	  </div><!--/app-body-->

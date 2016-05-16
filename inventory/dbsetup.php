@@ -22,27 +22,36 @@
   
   if ($userflag == "1"){
 	  echo "Username is not defined! </br>";
-	  
-	  if ($passflag == "1") {
-		  echo "Password is not defined! </br>";
-	  };
-	  
 	  die;
   }
+	
+	if ($passflag == "1") {
+		echo "Password is not defined! </br>";
+		die;
+	};
+
 
   //http://stackoverflow.com/questions/19751354/how-to-import-sql-file-in-mysql-database-using-php
 	
   //Database Credentials
-	$dbhost			= 'localhost';								//DB host
-    $dbuser 		= $dbuser0;							   		//DB user
-    $dbpassword		= $dbpassword0;		       					//DB password
-	$dbname			= 'test';								   	//DB name
-	$dbfile			= '../dbsetup/database.sql';	           	//DB file
+	$dbhost				= 'localhost';										//DB host
+  $dbuser 			= $dbuser0;												//DB user
+  $dbpassword		= $dbpassword0;		     						//DB password
+	$dbname				= 'mysql';												//DB name
+	$dbfile				= '../dbsetup/database.sql';	    //DB file
 
 	// Connect to MySQL server
-	mysql_connect($dbhost, $dbuser, $dbpassword) or die('Error connecting to MySQL server: ' . mysql_error());
+	//mysqli_connect($dbhost, $dbuser, $dbpassword) or die('Error connecting to MySQL server: ' . mysqli_error());
+	
+	$link = mysqli_connect($dbhost, $dbuser, $dbpassword);
+	
+	if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+  }
+	
 	// Select database
-	mysql_select_db($dbname) or die('Error selecting MySQL database: ' . mysql_error());
+	mysqli_select_db($link, $dbname) or die('Error selecting MySQL database: ' . mysqli_error($link));
 
 	// Temporary variable, used to store current query
 	$templine = '';
@@ -62,7 +71,7 @@
 		if (substr(trim($line), -1, 1) == ';')
 		{
 				// Perform the query
-				mysql_query($templine) or print('Error performing query \'<strong>' . $templine . '\': ' . mysql_error() . '<br /><br />');
+				mysqli_query($link, $templine) or print('Error performing query \'<strong>' . $templine . '\': ' . mysqli_error($link) . '<br /><br />');
 				// Reset temp variable to empty
 				$templine = '';
 		}

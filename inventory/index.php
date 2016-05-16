@@ -100,7 +100,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 			<div class="list-group">
 			  <div class="list-group-item">
 				<h1><?php echo $institution?><br/>
-				  <small>Mobile Inventory Software for Android (MISA) v1.1r1</small>
+				  <small>Mobile Inventory Software for Android (MISA) v1.2</small>
 				</h1>
 			  </div>
 

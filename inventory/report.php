@@ -118,7 +118,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 										<center><button class="form-control app-search" type="submit" value="submit" form="output">GO</button></center>
 									</td>
 								<tr>
-							<table>
+							</table>
 						</form>
 		</div><!--/scrollable-content-->	  
 	  </div><!--/app-body-->

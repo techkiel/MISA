@@ -92,9 +92,25 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 			<span>Scan Barcode</span>
 		</div><!--/title-->
 
-		<div class="scrollable-content">
-			<div class="scrollable-content container-fluid section">
 
+									
+		<form action="./scan.php" method='GET' id="barcode">
+			<table width="100%">
+				<tr>
+					<td>
+						<input label="scan" id= "scan" type="scan"  class="form-control app-search" placeholder="Input/Scan Barcode..." name="barcode">
+<script type="text/javascript">
+document.getElementById('scan').focus()
+</script>
+					</td>
+				<tr>
+			</table>
+		</form>
+
+		
+		<div class="scrollable-content">		
+			<div class="scrollable-content container-fluid section">			
+			
 	<?php 
 		if ($row_count=='0'){?>
 			<div class="panel-group" id="accordion">
@@ -104,7 +120,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 						Search for <?php print $barcode ?> returned <?php print $row_count?> results. The item does not exist in the current database
 					</h4>
 				</div><!--/panel-heading-->
-			    </div><!--/collapse-->
 			  </div><!--/panel panel-default-->
 			</div><!--/accordion-->
 
@@ -225,7 +240,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 		}
 		?>
 
-		  </div><!--/scrollable-content container-fluid section-->
+		</div><!--/scrollable-content container-fluid section-->
 		</div><!--/scrollable-content-->
 	  </div><!--/app-body-->
     </div><!--/app-->

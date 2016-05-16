@@ -77,17 +77,17 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 		<div content-for="title">
 		  <span>Scan Barcode</span>
 		</div>
-						<form action="./scan.php" method='GET'>
+						<form action="./scan.php" method='GET' id="barcode">
 							<table width="100%">
 								<tr>
 									<td>
-										<input label="search" id= "search" type="search" class="form-control app-search" placeholder="Input/Scan Barcode..." name="barcode"><center></input>
+										<input label="scan" id= "scan" type="scan"  class="form-control app-search" placeholder="Input/Scan Barcode..." name="barcode">
 <script type="text/javascript">
-document.getElementById('search').focus()
+document.getElementById('scan').focus()
 </script>
 									</td>
 								<tr>
-							<table>
+							</table>
 						</form>
 		</div><!--/scrollable-content-->	  
 	  </div><!--/app-body-->
